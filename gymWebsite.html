@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gym Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Balsamiq+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac4d9da716.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url(/istockphoto-1153036013-170667a.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .left{
+            /*border: 2px solid red;*/
+            display: inline-block;
+            position: absolute;
+            top: 34px;
+            left: 32px;
+        }
+        .left img{
+            width: 80px;
+            margin-left: 15px;
+        }
+        .left div{
+            text-align: center;
+            margin-left: 12px;
+        }
+        .mid{
+            /*border: 2px solid yellow;*/
+            width: 750px;
+            margin: auto;
+            margin-top: 35px;
+        }
+        .right{
+            /*border: 2px solid green;*/
+            display: inline-block;
+            position: absolute;
+            top: 39px;
+            right: 32px;
+        }
+        .btn{
+            width: 60px;
+            margin-top: 7px;
+            margin-left: 5px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: rgb(80, 78, 78);
+            border: 3px solid rgb(59, 57, 57);
+            border-radius: 10px;
+        }
+        #search1{
+            border: 2px solid rgb(62, 61, 61);
+            border-radius: 10px;
+            padding: 3px 6px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 24px;
+            font-size: 19px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: rgb(201, 197, 197);
+        }
+        .bottom{
+            /*border: 2px solid white;*/
+            display: inline-block;
+            position: absolute;
+            top: 635px;
+            right: 34px;
+        }
+        .bottom p{
+            display: inline-block;
+            margin-top: 1px;
+            margin-right: 10px;
+            border-bottom: 2px solid white;
+        }
+        .logo1{
+            display: inline-block;
+            position: absolute;
+            top: 41px;  
+            right: 55px;          
+        }
+        .logo2{
+            display: inline-block;
+            position: absolute;
+            top: 40px;  
+            right: 25px; 
+        }
+        .logo3{
+            display: inline-block;
+            position: absolute;
+            top: 40px;  
+            left: 63px;
+        }
+        .logo1:hover{
+            cursor: pointer;
+            color: blue;
+        }
+        .logo2:hover{
+            cursor: pointer;
+            color: rgb(89, 89, 191);
+        }
+        .logo3:hover{
+            cursor: pointer;
+            color: rgb(226, 90, 113);
+        }
+        .container{
+            /*border: 2px solid white;*/
+            border-radius: 40px;
+            margin: 110px 40px;
+            padding: 80px 45px;
+            width: 700px;
+        }
+        .container h1{
+            /*text-align: center;*/
+            position: absolute;
+            top: 199px;
+            right: 1029px;
+            border-bottom: 7px solid rgb(215, 213, 213);
+        }
+        .formAction input{
+            text-align: center;
+            display: block;
+            width: 270px;
+            margin: 9px auto;
+            padding: 3px 3px;
+            border: 3px solid black;
+            border-radius: 8px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container button{
+            display: block;
+            width: 272px;
+            margin: auto;
+            margin-top: 18px;
+            border-radius: 15px;
+            padding: 3px 3px;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="/gymLogo.jpg" alt="">
+            <div>Fitness Club</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Membership Details</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <input type="search" name="search" id="search1" placeholder="Search here"><br>
+            <button class="btn">
+                Search
+            </button>
+        </div>
+        <div class="bottom">
+            <p>Follow us</p>
+            <div class="logo1">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="logo2">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="logo3">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Now</h1>
+        <form action="noAction.php">
+            <div class="formAction">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="formAction">
+                <input type="text" placeholder="Enter your ID">
+            </div>
+            <div class="formAction">
+                <input type="password" placeholder="Enter your password">
+            </div>
+            <div class="formAction">
+                <input type="number" placeholder="Enter your birth date">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

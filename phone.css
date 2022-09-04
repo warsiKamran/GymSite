@@ -1,0 +1,16 @@
+/*navigation*/
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    flex-direction: column;
+}
+#home{
+    height: 380px;
+}
+#home::before{
+    height: 450px;
+}
+#services{
+    flex-direction: column;
+}
