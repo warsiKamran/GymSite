@@ -41,7 +41,10 @@
 }
 #navbar ul li a:hover{
     color: black;
-    border-bottom: 2px solid black;
+    /*border-bottom: 2px solid black;*/
+    border: 2px solid white;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 
 /*home*/
